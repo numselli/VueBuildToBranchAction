@@ -46,5 +46,5 @@ runs:
               git init
               git add -A
               git commit -m '${{ inputs.gitmsg }}'
-              git push -f https://${{ inputs.username }}:${{ inputs.token }}@github.com/${{ inputs.username }}/${{ inputs.reponame }}.git master:${{ gitbranch }}
+              git push -f https://${{ inputs.username }}:${{ inputs.token }}@github.com/${{ inputs.username }}/${{ inputs.reponame }}.git master:${{ inputs.gitbranch }}
         shell: bash
