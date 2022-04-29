@@ -1,4 +1,4 @@
-# Build Vue and deploy it to Github Pages 🚀
+# Build Vue and deploy it to a branch 🚀
 This Action will Build your Vue Project and deploy it to a specified branch
 
 ## Getting Started 🎉
