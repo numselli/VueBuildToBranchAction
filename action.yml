@@ -7,6 +7,9 @@ inputs:
   username:
     description: 'Your username'
     required: true
+  orgname:
+    description: 'The name of the organization'
+    required: true
   reponame:
     description: 'Your reponame'
     required: true
@@ -46,5 +49,5 @@ runs:
               git init
               git add -A
               git commit -m '${{ inputs.gitmsg }}'
-              git push -f https://${{ inputs.username }}:${{ inputs.token }}@github.com/${{ inputs.username }}/${{ inputs.reponame }}.git master:${{ inputs.gitbranch }}
+              git push -f https://${{ inputs.username }}:${{ inputs.token }}@github.com/${{ inputs.orgname }}/${{ inputs.reponame }}.git master:${{ inputs.gitbranch }}
         shell: bash
